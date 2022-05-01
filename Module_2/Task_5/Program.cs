@@ -30,9 +30,8 @@ namespace Task_5
                         symbol = str[i];
                     }
                 }
+
                 string[] number = str.Split(new char[] {symbol});
-                Console.WriteLine(number[0]);
-                Console.WriteLine(number[1]);
 
                 int.TryParse(number[0], out value);
                 int.TryParse(number[1], out value2);
@@ -43,7 +42,8 @@ namespace Task_5
                 }
                 else
                 {
-                    Console.WriteLine($"{value} {symbol} {value2} =  {value - value2}");
+                    Console.WriteLine($"{value} {symbol} {value2} =  {value + value2}");
+
                 }
 
 
