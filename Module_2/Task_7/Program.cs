@@ -9,6 +9,7 @@ namespace Task_7
         {
             Console.WriteLine("Введите текст");
             string? str = Console.ReadLine();
+<<<<<<< HEAD
             char[]? text = new char[str != null ? str.Length : 0];
             if(text.Length == 0)
             {
@@ -26,6 +27,15 @@ namespace Task_7
           
 
             for(int i = 0; i < str?.Length; i++)
+=======
+            char[]? text = new char[str.Length];
+            Console.WriteLine("Введите недопустимое слово");
+            string? word = Console.ReadLine();
+            bool flag = false;
+          
+
+            for(int i = 0; i < str.Length; i++)
+>>>>>>> 2e9e303fca299a8d28228e6261e6f73fc3905722
             {
                 text[i] = str[i];
             }
@@ -38,7 +48,11 @@ namespace Task_7
 
            for(int i = 0; i < text?.Length; i++)
             {
+<<<<<<< HEAD
                 if(text[i] == word?[0])
+=======
+                if(text[i] == word[0])
+>>>>>>> 2e9e303fca299a8d28228e6261e6f73fc3905722
                 {
                     for(int j = 0; j < word.Length; j++)
                     {
@@ -66,7 +80,11 @@ namespace Task_7
                 }
             }
 
+<<<<<<< HEAD
             for (int i = 0; i < text?.Length; i++)
+=======
+            for (int i = 0; i < str?.Length; i++)
+>>>>>>> 2e9e303fca299a8d28228e6261e6f73fc3905722
             {
                 Console.Write(text[i]);
             }
